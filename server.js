@@ -9,11 +9,11 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 const customerDb = {
     person: [
-        { id: '1', firstName: 'Mathu', lastName: 'Radhak', age: 30, sex: 'female' },
-        { id: '2', firstName: 'Mani', lastName: 'Natcha', age: 36, sex: 'male' },
-        { id: '3', firstName: 'Auron', lastName: 'Paul', age: 26, sex: 'male' },
-        { id: '4', firstName: 'Syed', lastName: 'Moin', age: 27, sex: 'male' },
-        { id: '5', firstName: 'Ram', lastName: 'Srinivasa', age: 45, sex: 'male' },
+        { id: '1', firstName: 'Danereyas', lastName: 'Targaryen', age: 28, sex: 'female' },
+        { id: '2', firstName: 'Jon', lastName: 'Snow', age: 32, sex: 'male' },
+        { id: '3', firstName: 'Arya', lastName: 'Stark', age: 22, sex: 'female' },
+        { id: '4', firstName: 'Sansa', lastName: 'Stark', age: 26, sex: 'female' },
+        { id: '5', firstName: 'Tyrion', lastName: 'Lannister', age: 35, sex: 'male' },
     ]
 }
 
