@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
-import { Router } from 'react-router-dom';
-import { ThemeProvider } from '@material-ui/styles';
-import { createBrowserHistory } from 'history';
+import React from 'react';
+import styles from './App.module.css';
 
-import theme from './theme';
-import 'react-perfect-scrollbar/dist/css/styles.css';
-import './assets/scss/index.scss';
-import Routes from './Routes';
+import { Form } from './components/Form/Form';
+import { Label } from './components/Label/Label';
+import { ErrorBoundary } from './components/Common/ErrorBoundary/ErroyBoundary';
 
-const browserHistory = createBrowserHistory();
-
-export default class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
-        <Router history={browserHistory}>
-          <Routes />
-        </Router>
-      </ThemeProvider>
-    );
+      <div className={styles.viewSize}>
+        <ErrorBoundary>
+          <Label data={{ text: 'Customer Reward Program' }}> </Label>
+          <Form />
+        </ErrorBoundary>
+      </div>
+    )
   }
 }
+
+export default App;

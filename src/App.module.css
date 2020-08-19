@@ -1,0 +1,13 @@
+.viewSize {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color:lightgrey;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .viewSize {
+    width: 95%;
+  }
+}

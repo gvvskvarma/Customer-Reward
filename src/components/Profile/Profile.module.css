@@ -1,0 +1,11 @@
+.flexContainer {
+    display: inline-block;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    padding: 20px;
+  }
+
+  .rewardTotal {
+    font-size:  42px;
+  }

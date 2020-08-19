@@ -1,45 +1,25 @@
 {
-  "name": "customer-rewards",
+  "name": "customer-reward-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.2.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "clsx": "^1.0.4",
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
-    "history": "^4.9.0",
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-perfect-scrollbar": "^1.5.3",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.4.1",
-    "recompose": "^0.30.0",
-    "underscore": "^1.9.1",
-    "uuid": "^3.3.2"
-  },
-  "devDependencies": {
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "nodemon": "^2.0.4",
-    "prettier": "^1.17.1",
-    "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1",
-    "typescript": "^3.5.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "concurrently \"nodemon server.js\" \"react-scripts start\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "mock": "nodemon server.js",
+    "start:all": "concurrently \"yarn mock\" \"yarn start\""
   },
   "eslintConfig": {
     "extends": "react-app"

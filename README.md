@@ -1,10 +1,36 @@
+### `yarn install`
+install the dependencies  
+
+### `yarn start:all`  
+starts the front-end components and back-end server.js
+  (OR)
+### `yarn start`  
+starts the front-end components. 
+Run customer-reward-api from the below link for backend microservices
+
+## Features 
+1) Used Class components
+2) Functional components
+3) Css class styles
+4) Props, state and Events 
+5) axios for microservice calls
+6) Error boundary checking
+7) Front-end component rendering based on condition
+8) Backend service call handling
+9) Event handling for customer interaction
+10) Data set design
+11) Business logic to compute the rewards based on response on NodeJS 
+12) Responsive Web Design
+
+---------------------------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,12 +38,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,7 +53,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -63,6 +89,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
