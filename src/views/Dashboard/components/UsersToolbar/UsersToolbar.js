@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(1)
   },
   title: {
-    fontWeight: 700
+    fontWeight: 500
   },
   content: {
     padding: 0

@@ -8,48 +8,48 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 const customerDb = {
     person: [
-        { id: '1', firstName: 'penny', lastName: 'swetish', age: 30, sex: 'female' },
-        { id: '2', firstName: 'sheldon', lastName: 'cooper', age: 36, sex: 'male' },
-        { id: '3', firstName: 'stuart', lastName: 'weiss', age: 26, sex: 'male' },
-        { id: '4', firstName: 'amy', lastName: 'Farah', age: 32, sex: 'female' },
-        { id: '5', firstName: 'raj', lastName: 'koothrapalli', age: 25, sex: 'male' },
+        { id: '1', firstName: 'Daenerys', lastName: 'Targaryen', age: 28, sex: 'female' },
+        { id: '2', firstName: 'Jon', lastName: 'snow', age: 32, sex: 'male' },
+        { id: '3', firstName: 'Arya', lastName: 'Stark', age: 22, sex: 'female' },
+        { id: '4', firstName: 'Sansa', lastName: 'Stark', age: 26, sex: 'female' },
+        { id: '5', firstName: 'Tyrion', lastName: 'Lannister', age: 35, sex: 'male' },
     ]
 }
 
 const transactionDb = {
     '1': [
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'abcd1', price: 132.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'efgh', price: 62.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'ijkl', price: 29.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'mnop', price: 176.00 },
-        { date: '2020-23-07 12:00:00', month: 'Jul', item: 'ijkl', price: 103.00 },
-        { date: '2020-22-06 12:00:00', month: 'Jul', item: 'mnop', price: 47.00 },
-        { date: '2020-21-05 12:00:00', month: 'May', item: 'mnop', price: 23.00 },
-        { date: '2020-04-05 12:00:00', month: 'May', item: 'mnop', price: 147.00 }
+        { date: '2020-17-08 12:00:00', month: 'Jun', item: 'Armani', price: 127.00 },
+        { date: '2020-15-08 12:00:00', month: 'Jun', item: 'Ferrari', price: 92.00 },
+        { date: '2020-14-08 12:00:00', month: 'Jun', item: 'Macys', price: 22.00 },
+        { date: '2020-12-08 12:00:00', month: 'Jun', item: 'Puma', price: 169.00 },
+        { date: '2020-23-07 12:00:00', month: 'Jul', item: 'Gucci', price: 102.00 },
+        { date: '2020-22-07 12:00:00', month: 'Jul', item: 'Givenchey', price: 34.00 },
+        { date: '2020-21-06 12:00:00', month: 'May', item: 'Nordstorm', price: 29.00 },
+        { date: '2020-04-06 12:00:00', month: 'May', item: 'Sony', price: 133.00 }
     ],
     '2': [
-        { date: '2020-12-06 12:00:00', month: 'Jul', item: 'ijkl', price: 37.00 },
-        { date: '2020-08-05 12:00:00', month: 'May', item: 'mnop', price: 183.00 },
-        { date: '2020-15-05 12:00:00', month: 'May', item: 'abcd2', price: 172.00 },
-        { date: '2020-13-02 12:00:00', month: 'Feb', item: 'efgh', price: 129.00 },
+        { date: '2020-12-06 12:00:00', month: 'Jul', item: 'Apple', price: 45.00 },
+        { date: '2020-08-05 12:00:00', month: 'May', item: 'Banana', price: 196.00 },
+        { date: '2020-15-05 12:00:00', month: 'May', item: 'Tommy', price: 183.00 },
+        { date: '2020-13-02 12:00:00', month: 'Feb', item: 'Nike', price: 108.00 },
     ],
     '3': [
-        { date: '2020-12-04 12:00:00', month: 'Apr', item: 'mnop', price: 59.00 },
-        { date: '2020-12-05 12:00:00', month: 'May', item: 'ijkl', price: 97.00 },
-        { date: '2020-12-02 12:00:00', month: 'Feb', item: 'efgh', price: 132.00 },
-        { date: '2020-12-01 12:00:00', month: 'Jan', item: 'abcd3', price: 76.00 },
+        { date: '2020-12-04 12:00:00', month: 'Apr', item: 'Adidas', price: 69.00 },
+        { date: '2020-12-05 12:00:00', month: 'May', item: 'Leather', price: 99.00 },
+        { date: '2020-12-02 12:00:00', month: 'Feb', item: 'Bose', price: 119.00 },
+        { date: '2020-12-01 12:00:00', month: 'Jan', item: 'Walmart', price: 99.00 },
     ],
     '4': [
-        { date: '2020-12-05 12:00:00', month: 'May', item: 'abcd4', price: 89.00 },
-        { date: '2020-12-05 12:00:00', month: 'May', item: 'efgh', price: 17.00 },
-        { date: '2020-12-05 12:00:00', month: 'May', item: 'ijkl', price: 269.00 },
-        { date: '2020-12-05 12:00:00', month: 'May', item: 'mnop', price: 176.00 },
+        { date: '2020-12-05 12:00:00', month: 'May', item: 'Target', price: 88.00 },
+        { date: '2020-12-05 12:00:00', month: 'May', item: 'Ebay', price: 11.00 },
+        { date: '2020-12-05 12:00:00', month: 'May', item: 'Amazon', price: 166.00 },
+        { date: '2020-12-05 12:00:00', month: 'May', item: 'Romwe', price: 277.00 },
     ],
     '5': [
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'abcd5', price: 63.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'efgh', price: 119.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'ijkl', price: 89.00 },
-        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'mnop', price: 167.00 },
+        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'Shien', price: 75.00 },
+        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'Flipkart', price: 123.00 },
+        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'Amazon', price: 99.00 },
+        { date: '2020-08-06 12:00:00', month: 'Jun', item: 'Deccan', price: 183.00 },
     ]
 }
 
